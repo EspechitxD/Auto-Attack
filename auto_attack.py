@@ -3,6 +3,7 @@ import keyboard as kb
 import pyautogui as pg
 import ctypes
 import pygetwindow as gw
+import pyscreeze as pys
 
 #x=869, y=439
 #x=961, y=441
@@ -28,7 +29,7 @@ import pygetwindow as gw
 
 
 def check_battle():
-    return pg.locateOnScreen('imgs/a.PNG')
+    return pg.locateOnScreen('imgs/battle.PNG', region=(1739, 753, 159, 48))
     
 
 #is_battle = check_battle()
@@ -36,4 +37,4 @@ def check_battle():
 
 while True:
     attack = check_battle()
-    print('a.PNG')
+    print(attack)
